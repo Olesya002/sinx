@@ -1,0 +1,26 @@
+Fig = figure
+x = -3*pi:0.01:3*pi;
+y1 = sin(x);
+y2 = sin(2*x);
+y3 = sin(3*x);
+y4 = sin(4*x);
+
+subplot(2,2,1)
+plot(x,y1,"Color",'b')
+grid on
+title('y = sinx')
+
+subplot(2,2,2)
+plot(x,y2,'LineWidth',2,"Color",'g')
+grid on
+title('y = sin2x')
+
+subplot(2,2,3)
+plot(x,y3,'LineWidth',3,"Color",'y')
+grid on
+title('y = sin3x')
+
+subplot(2,2,4)
+plot(x,y2,'LineWidth',4,"Color",'r')
+grid on
+title('y = sin4x')
